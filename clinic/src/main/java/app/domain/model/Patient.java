@@ -2,7 +2,7 @@ package app.domain.model;
 
 import java.sql.Date;
 
-public class patient {
+public class Patient {
 	private long id;
 	private String name;
 	private long document;
@@ -55,9 +55,6 @@ public class patient {
 		this.phone = phone;
 	}
 	
-	/*falta informacion contacto emergencia
-	 * informacion de seguro(poliza)
-	 */
 	
 	
 

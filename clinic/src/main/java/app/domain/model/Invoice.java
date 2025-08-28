@@ -1,20 +1,26 @@
 package app.domain.model;
 
+import java.sql.Date;
+
 public class Invoice {
 	private long id;
-	private patient patient;
+	private Patient patientName;
 	private User doctors;
+	private String insuranceCompany;
+    private int policyNumber;
+	private int policyValidityDays;
+    private Date date;
 	public long getId() {
 		return id;
 	}
 	public void setId(long id) {
 		this.id = id;
 	}
-	public patient getPatient() {
-		return patient;
+	public Patient getPatientName() {
+		return patientName;
 	}
-	public void setPatient(patient patient) {
-		this.patient = patient;
+	public void setPatientName(Patient patientName) {
+		this.patientName = patientName;
 	}
 	public User getDoctors() {
 		return doctors;
@@ -22,13 +28,39 @@ public class Invoice {
 	public void setDoctors(User doctors) {
 		this.doctors = doctors;
 	}
+	public String getInsuranceCompany() {
+		return insuranceCompany;
+	}
+	public void setInsuranceCompany(String insuranceCompany) {
+		this.insuranceCompany = insuranceCompany;
+	}
+	public int getPolicyNumber() {
+		return policyNumber;
+	}
+	public void setPolicyNumber(int policyNumber) {
+		this.policyNumber = policyNumber;
+	}
+	public int getPolicyValidityDays() {
+		return policyValidityDays;
+	}
+	public void setPolicyValidityDays(int policyValidityDays) {
+		this.policyValidityDays = policyValidityDays;
+	}
+	public Date getDate() {
+		return date;
+	}
+	public void setDate(Date date) {
+		this.date = date;
+	}
+    
+    
 	
+    
+    
+    
+
 	
-	/*falta nombre poliza
-	 * # poliza
-	 * dias vigencia
-	 * fecha final poliza
-	 */
+
 	
 	
 
