@@ -1,5 +1,5 @@
 package app.domain.model;
 
 public class MedicalItem extends Item {
-dosis
+	private String dosis;
 }

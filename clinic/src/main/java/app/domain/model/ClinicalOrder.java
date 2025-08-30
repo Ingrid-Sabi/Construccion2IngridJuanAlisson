@@ -1,9 +1,16 @@
 package app.domain.model;
 
+import java.util.List;
+
 public class ClinicalOrder {
-id
+/*id
 paciente
 fecha
-medico
-item[]
+medico*/
+	private List<Item> items;
+	
+public void estoSeBorraPorqueEsUnEjemplo() {
+	items.add(new MedicalItem());
+	items.add(new ProcedureItem());}
+
 }
