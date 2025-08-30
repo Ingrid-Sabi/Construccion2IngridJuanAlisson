@@ -1,12 +1,16 @@
 package app.domain.model;
 
+import java.sql.Date;
 import java.util.List;
 
 public class ClinicalOrder {
-/*id
-paciente
-fecha
-medico*/
+	private long id; 
+	private Patient document;
+	private Date date;
+	private User doctors;
+
+	
+
 	private List<Item> items;
 	
 public void estoSeBorraPorqueEsUnEjemplo() {

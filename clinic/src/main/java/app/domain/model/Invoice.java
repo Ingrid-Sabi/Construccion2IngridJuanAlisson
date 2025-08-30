@@ -28,11 +28,11 @@ public class Invoice {
 	public void setDoctors(User doctors) {
 		this.doctors = doctors;
 	}
-	public String getInsuranceCompany() {
-		return insuranceCompany;
+	public String getCompanyName() {
+		return companyName;
 	}
-	public void setInsuranceCompany(String insuranceCompany) {
-		this.insuranceCompany = insuranceCompany;
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
 	}
 	public int getPolicyNumber() {
 		return policyNumber;
@@ -40,11 +40,11 @@ public class Invoice {
 	public void setPolicyNumber(int policyNumber) {
 		this.policyNumber = policyNumber;
 	}
-	public int getPolicyValidityDays() {
-		return policyValidityDays;
+	public int getValidity() {
+		return validity;
 	}
-	public void setPolicyValidityDays(int policyValidityDays) {
-		this.policyValidityDays = policyValidityDays;
+	public void setValidity(int validity) {
+		this.validity = validity;
 	}
 	public Date getDate() {
 		return date;
@@ -52,6 +52,9 @@ public class Invoice {
 	public void setDate(Date date) {
 		this.date = date;
 	}
+	
+    
+    
     
     
 	

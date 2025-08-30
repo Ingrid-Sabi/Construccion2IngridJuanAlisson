@@ -6,7 +6,9 @@ public interface PatientPort {
 	 public  Patient findByDocument(Object patient) throws Exception;
 	      	    
 	    public Patient findByUserName(Patient patient) throws Exception;
+	    
 	    public void save(Patient patient) throws Exception;
+	    
 	    public Patient findById(String patientName);
 
 }
