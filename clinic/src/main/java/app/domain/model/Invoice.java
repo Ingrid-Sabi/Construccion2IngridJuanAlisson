@@ -6,9 +6,9 @@ public class Invoice {
 	private long id;
 	private Patient patientName;
 	private User doctors;
-	private String insuranceCompany;
+	private String companyName;
     private int policyNumber;
-	private int policyValidityDays;
+	private int validity;
     private Date date;
 	public long getId() {
 		return id;
