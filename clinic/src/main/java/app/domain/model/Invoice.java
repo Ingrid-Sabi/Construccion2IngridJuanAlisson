@@ -8,8 +8,10 @@ public class Invoice {
 	private User doctors;
 	private String companyName;
     private int policyNumber;
+    private String status;
 	private int validity;
     private Date date;
+    
 	public long getId() {
 		return id;
 	}
@@ -51,6 +53,12 @@ public class Invoice {
 	}
 	public void setDate(Date date) {
 		this.date = date;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	}
 	
     

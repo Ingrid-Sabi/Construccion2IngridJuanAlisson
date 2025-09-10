@@ -5,9 +5,12 @@ import java.sql.Date;
 public class Patient {
 	private long id;
 	private String name;
-	private long document;
+	private String patientDocument;
+	private String doctorDocument;
+	
 	private Date dateBirth;
 	private String address;
+	private String age;
 	private String mail;
 	private long phone;
 	
@@ -24,11 +27,18 @@ public class Patient {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public long getDocument() {
-		return document;
+	
+	public String getPatientDocument() {
+		return patientDocument;
 	}
-	public void setDocument(long document) {
-		this.document = document;
+	public void setPatientDocument(String patientDocument) {
+		this.patientDocument = patientDocument;
+	}
+	public String getDoctorDocument() {
+		return doctorDocument;
+	}
+	public void setDoctorDocument(String doctorDocument) {
+		this.doctorDocument = doctorDocument;
 	}
 	public Date getDateBirth() {
 		return dateBirth;
@@ -53,6 +63,12 @@ public class Patient {
 	}
 	public void setPhone(long phone) {
 		this.phone = phone;
+	}
+	public String getAge() {
+		return age;
+	}
+	public void setAge(String age) {
+		this.age = age;
 	}
 	
 	
