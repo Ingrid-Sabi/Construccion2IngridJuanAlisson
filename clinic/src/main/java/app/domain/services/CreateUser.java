@@ -37,12 +37,6 @@ public class CreateUser {
 		}
 		
 		
-		if (user.getEmail() == null || ((User) user.getEmail()).isEmpty()) {
-			throw new Exception("El correo electrónico es obligatorio");
-		}
-		if (!((String) user.getEmail()).contains("@")) {
-			throw new Exception("El correo electrónico no es válido");
-		}
 		
 		
 		userPort.save(user);

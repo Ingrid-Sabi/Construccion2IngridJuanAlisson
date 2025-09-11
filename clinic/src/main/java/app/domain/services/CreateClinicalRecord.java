@@ -36,7 +36,7 @@ public class CreateClinicalRecord {
 			throw new Exception("La historia clínica debe tener un documento de paciente");
 		}
 		
-		Patient patient = patientPort.findByDocument(clinicalRecord.getPatientDocument());
+		Patient patient = patientPort.findByDocument(patient.getPatientDocument());
 		if (patient == null) {
 			throw new Exception("La historia clínica debe estar asociada a un paciente válido");
 		}

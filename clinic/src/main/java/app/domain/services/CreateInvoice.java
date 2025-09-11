@@ -25,9 +25,7 @@ public class CreateInvoice {
 			throw new Exception("El paciente asociado a la factura no existe en el sistema");
 		}
 		
-		if (invoice.getStatus() == null || ((Patient) invoice.getStatus()).isEmpty()) {
-			throw new Exception("El estado de la factura es obligatorio");
-		}
+		
 		
 	}
 }

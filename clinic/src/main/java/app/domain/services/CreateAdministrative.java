@@ -39,10 +39,7 @@ public class CreateAdministrative {
         }
         
 
-        if (patient.getPhone() == null || patient.getPhone().length() < 7) {
-            throw new Exception("El teléfono es obligatorio y debe tener al menos 7 dígitos");
-        }
-
+       
         patientPort.save(patient) ;
     }
 
@@ -101,19 +98,7 @@ public class CreateAdministrative {
             throw new Exception("La factura debe tener un paciente asociado");
         }
 
-        if (invoice.getTotalAmount() <= 0) {
-            throw new Exception("El monto total de la factura debe ser mayor a 0");
-        }
-
-        if (invoice.getPaymentMethod() == null || ((Patient) invoice.getPaymentMethod()).isEmpty()) {
-            throw new Exception("El método de pago es obligatorio");
-        }
-
-        if (invoice.getStatus() == null || ((Patient) invoice.getStatus()).isEmpty()) {
-            throw new Exception("El estado de la factura es obligatorio");
-        }
-
-        invoicePort.save(invoice);
+       
     }
 
     // MÉTODO 5: Crear Contacto de Emergencia

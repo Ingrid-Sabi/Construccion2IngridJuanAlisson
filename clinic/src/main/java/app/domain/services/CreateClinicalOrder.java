@@ -23,7 +23,7 @@ public class CreateClinicalOrder {
 		}
 		
 		
-		User doctor = userPort.findByDocument(clinicalOrder.getDoctorDocument());
+		User doctor = userPort.findByDocument(clinicalOrder.getDoctors());
 		if (doctor == null || !doctor.getRole().equals(Role.DOCTORS)) {
 		    throw new Exception("La orden clínica debe estar registrada por un doctor válido");
 		}

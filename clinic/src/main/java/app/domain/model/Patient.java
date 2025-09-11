@@ -70,6 +70,10 @@ public class Patient {
 	public void setAge(String age) {
 		this.age = age;
 	}
+	public boolean isEmpty() {
+		// TODO Auto-generated method stub
+		return false;
+	}
 	
 	
 	

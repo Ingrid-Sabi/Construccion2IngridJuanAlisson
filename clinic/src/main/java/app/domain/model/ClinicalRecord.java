@@ -9,7 +9,7 @@ public class ClinicalRecord {
 	private String motive;
 	private String symptoms;
 	private String Diagnosis;
-	
+	private String recordNumber;
 	
 	
 	public long getId() {
@@ -47,6 +47,12 @@ public class ClinicalRecord {
 	}
 	public void setDiagnosis(String diagnosis) {
 		Diagnosis = diagnosis;
+	}
+	public String getRecordNumber() {
+		return recordNumber;
+	}
+	public void setRecordNumber(String recordNumber) {
+		this.recordNumber = recordNumber;
 	}
 	
 	
