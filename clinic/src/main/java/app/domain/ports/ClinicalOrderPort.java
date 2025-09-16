@@ -2,23 +2,11 @@ package app.domain.ports;
 
 import app.domain.model.ClinicalOrder;
 
-public class ClinicalOrderPort {
+public interface ClinicalOrderPort {
 
-	public ClinicalOrderPort(Object orderNumber) {
-		// TODO Auto-generated method stub
-		
-	     return;
-	}
 
-	public Object findByOrderNumber(Object orderNumber) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public void save(ClinicalOrder clinicalOrder) {
-		// TODO Auto-generated method stub
-		
-	}
+	public Object findByOrderNumber(Object orderNumber) throws Exception;
+	public void save(ClinicalOrder clinicalOrder) throws Exception;
 
 }
 

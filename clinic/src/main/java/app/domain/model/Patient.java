@@ -10,7 +10,7 @@ public class Patient {
 	
 	private Date dateBirth;
 	private String address;
-	private String age;
+	private int age;
 	private String mail;
 	private long phone;
 	
@@ -64,10 +64,10 @@ public class Patient {
 	public void setPhone(long phone) {
 		this.phone = phone;
 	}
-	public String getAge() {
+	public int getAge() {
 		return age;
 	}
-	public void setAge(String age) {
+	public void setAge(int age) {
 		this.age = age;
 	}
 	public boolean isEmpty() {

@@ -6,12 +6,19 @@ public class ClinicalRecord {
 	private long id;
 	private Date date;
 	private User doctors;
+	private Patient patient;
 	private String motive;
 	private String symptoms;
 	private String Diagnosis;
 	private String recordNumber;
 	
 	
+	public Patient getPatient() {
+		return patient;
+	}
+	public void setPatient(Patient patient) {
+		this.patient = patient;
+	}
 	public long getId() {
 		return id;
 	}
