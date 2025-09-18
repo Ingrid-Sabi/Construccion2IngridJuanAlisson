@@ -3,7 +3,7 @@ package app.domain.ports;
 import app.domain.model.MedicalRecord;
 import app.domain.model.Patient;
 
-public class MedicalRecordPort {
+public interface MedicalRecordPort {
 
 	public void save(MedicalRecord medicalRecord) {
 		// TODO Auto-generated method stub

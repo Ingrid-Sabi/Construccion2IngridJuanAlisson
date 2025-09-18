@@ -16,8 +16,8 @@ public class CreateDoctor {
     private MedicalRecordPort medicalRecordPort;
     private MedicalOrderPort medicalOrderPort;
 
-    // Busca Historia Clínica
-    public ClinicalRecord buscarHistoria(String recordNumber) throws Exception {
+    // SearchClinicalOrder
+    public ClinicalRecord searchClinicalOrder(String recordNumber) throws Exception {
         if (recordNumber == null || recordNumber.isEmpty()) {
             throw new Exception("El número de la historia clínica es obligatorio");
         }
@@ -31,8 +31,8 @@ public class CreateDoctor {
         return clinicalRecord;
     }
 
-    // Crear Registro Médico
-    public void crearRegistroMedico(MedicalRecord medicalRecord) throws Exception {
+    // createClinicalRecord
+    public void CreateClinicalRecord(MedicalRecord medicalRecord) throws Exception {
         if (medicalRecord == null) {
             throw new Exception("El registro médico no puede ser nulo");
         }
@@ -57,8 +57,8 @@ public class CreateDoctor {
         medicalRecordPort.save(medicalRecord);
     }
 
-    // Actualiza Registro Médico
-    public void actualizarRegistroMedico(MedicalRecord medicalRecord) throws Exception {
+    // updateClinicalRecord
+    public void updateClinicalRecord(MedicalRecord medicalRecord) throws Exception {
         if (medicalRecord == null) {
             throw new Exception("El registro médico no puede ser nulo");
         }
@@ -80,8 +80,8 @@ public class CreateDoctor {
         medicalRecordPort.update(existing);
     }
 
-    // Crear Orden Médica
-    public void crearOrden(MedicalOrder order) throws Exception {
+    // Create Order 
+    public void createOrder(MedicalOrder order) throws Exception {
         if (order == null) {
             throw new Exception("La orden médica no puede ser nula");
         }

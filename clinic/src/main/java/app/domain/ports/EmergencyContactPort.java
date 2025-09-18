@@ -2,9 +2,9 @@ package app.domain.ports;
 
 import app.domain.model.EmergencyContact;
 
-public class EmergencyContactPort {
+public interface EmergencyContactPort {
 
-	public void save(EmergencyContact contact) {
+	public default void save(EmergencyContact contact) {
 		// TODO Auto-generated method stub
 		
 	}

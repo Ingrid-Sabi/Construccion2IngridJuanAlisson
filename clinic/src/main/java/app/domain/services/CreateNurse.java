@@ -13,8 +13,8 @@ public class CreateNurse {
     private PatientPort patientPort;
     private MedicalOrderPort medicalOrderPort;
 
-    // MÉTODO 1: Registrar Visita de Enfermería
-    public void registrarVisita(NurseVisit visit) throws Exception {
+    // METHODO 1: RegisterVisit
+    public void RegisterVisit(NurseVisit visit) throws Exception {
         if (visit == null) {
             throw new Exception("La visita de enfermería no puede ser nula");
         }
@@ -39,8 +39,8 @@ public class CreateNurse {
         nurseVisitPort.save(visit);
     }
 
-    // MÉTODO 2: Buscar Paciente
-    public Patient buscarPaciente(String document) throws Exception {
+    // METHODO 2: SearchClinicalOrderByPatient
+    public Patient SearchPatientByDocument(String document) throws Exception {
         if (document == null || document.isEmpty()) {
             throw new Exception("El documento del paciente es obligatorio");
         }
@@ -54,8 +54,8 @@ public class CreateNurse {
         return patient;
     }
 
-    // MÉTODO 3: Buscar Orden Médica
-    public MedicalOrder buscarOrden(String orderId) throws Exception {
+    // METHODO 3: Buscar Orden Médica
+    public MedicalOrder SearchCllinicalOrderByPatient(String orderId) throws Exception {
         if (orderId == null || orderId.isEmpty()) {
             throw new Exception("El ID de la orden médica es obligatorio");
         }

@@ -2,9 +2,9 @@ package app.domain.ports;
 
 import app.domain.model.NurseVisit;
 
-public class NurseVisitPort {
+public interface NurseVisitPort {
 
-	public void save(NurseVisit visit) {
+	public default void save(NurseVisit visit) {
 		// TODO Auto-generated method stub
 		
 	}

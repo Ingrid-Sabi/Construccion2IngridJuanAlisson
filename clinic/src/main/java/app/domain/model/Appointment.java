@@ -12,4 +12,9 @@ public class Appointment {
 		return null;
 	}
 
+	public static void createMedicalAppointment(Patient patient) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

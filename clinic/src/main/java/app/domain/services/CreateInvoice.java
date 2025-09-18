@@ -7,7 +7,7 @@ public class CreateInvoice {
 	
 	private PatientPort patientPort;
 	
-	public void create(Invoice invoice) throws Exception {
+	public void createinvoice(Invoice invoice) throws Exception {
 		
 		
 		if (invoice == null) {

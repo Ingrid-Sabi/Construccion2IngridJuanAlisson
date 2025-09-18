@@ -2,11 +2,13 @@ package app.domain.ports;
 
 import app.domain.model.MedicalOrder;
 
-public class MedicalOrderPort {
+public interface MedicalOrderPort {
 
-	public void save(MedicalOrder order) {
+	public default void save(MedicalOrder order) {
 		// TODO Auto-generated method stub
 		
 	}
+
+	public MedicalOrder findById(String orderId);
 
 }
