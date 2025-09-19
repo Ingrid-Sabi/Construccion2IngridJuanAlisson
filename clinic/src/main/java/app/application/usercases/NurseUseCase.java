@@ -8,7 +8,7 @@ import app.domain.services.CreateNurse;
 
 public class NurseUseCase {
 	
-	private CreateNurse creageNurse;
+	private CreateNurse createNurse;
 	
 	
 

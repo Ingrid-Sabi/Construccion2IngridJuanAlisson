@@ -3,10 +3,12 @@ package app.application.usercases;
 import app.domain.model.User;
 import app.domain.model.emuns.Role;
 import app.domain.services.CreateUser;
+import app.domain.services.CreateUser.UpdateUser;
 
 public class HumanResourcesUseCase {
 	
 	private CreateUser createUser;
+	private UpdateUser updateUser;
 
 	public void createDoctors(User user) throws Exception {
 		user.setRole(Role.DOCTORS);

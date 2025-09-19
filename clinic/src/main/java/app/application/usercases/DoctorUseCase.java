@@ -12,10 +12,11 @@ public class DoctorUseCase {
 	private CreateDoctor createDoctor;
 	private ClinicalOrder clinicalOrder;
 	private ClinicalRecord clinicalRecord;
+	private ClinicalOrder create;
 	
-	public void createOrder(ClinicalOrder order) throws Exception {
-		Object createClinicalOrder;
-		createClinicalOrder.create(order);
+	
+	public void createClinicalOrder(ClinicalOrder clinicalOrder) throws Exception {
+		create.create(clinicalOrder);
 	}
 	
 	public List<ClinicalOrder> searchOrders(Patient patient) throws Exception{

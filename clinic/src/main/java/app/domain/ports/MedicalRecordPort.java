@@ -5,17 +5,17 @@ import app.domain.model.Patient;
 
 public interface MedicalRecordPort {
 
-	public void save(MedicalRecord medicalRecord) {
+	public default void save(MedicalRecord medicalRecord) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	public MedicalRecord findById(Patient recordId) {
+	public default MedicalRecord findById(Patient recordId) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	public void update(MedicalRecord existing) {
+	public default void update(MedicalRecord existing) {
 		// TODO Auto-generated method stub
 		
 	}

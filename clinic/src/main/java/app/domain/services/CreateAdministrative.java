@@ -16,8 +16,8 @@ public class CreateAdministrative {
     private InvoicePort invoicePort;
     private EmergencyContactPort emergencyContactPort;
 
-    // MÉTODO 1: Crear Paciente
-    public void crearPaciente(Patient patient) throws Exception {
+    // METHODO 1: createPatient
+    public void createPatient(Patient patient) throws Exception {
         if (patient == null) {
             throw new Exception("El paciente no puede ser nulo");
         }
@@ -43,8 +43,8 @@ public class CreateAdministrative {
         patientPort.save(patient) ;
     }
 
-    // MÉTODO 2: Actualizar Paciente
-    public void actualizarPaciente(Patient patient) throws Exception {
+    // METHODO 2: updatePatient
+    public void UpdatePatient(Patient patient) throws Exception {
         if (patient == null) {
             throw new Exception("El paciente no puede ser nulo");
         }
@@ -66,7 +66,7 @@ public class CreateAdministrative {
     public void crearCita(Appointment appointment) throws Exception {
         if (appointment == null) {
             throw new Exception("La cita no puede ser nula");
-        }
+        } 
 
         if (appointment.getDate() == null) {
             throw new Exception("La cita debe tener una fecha");
@@ -101,8 +101,8 @@ public class CreateAdministrative {
        
     }
 
-    // MÉTODO 5: Crear Contacto de Emergencia
-    public void crearContactoDeEmergencia(EmergencyContact contact) throws Exception {
+    // MÉTODO 5: createEmergencycontact
+    public void createEmergencycontact(EmergencyContact contact) throws Exception {
         if (contact == null) {
             throw new Exception("El contacto de emergencia no puede ser nulo");
         }
